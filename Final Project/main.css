@@ -1,0 +1,468 @@
+
+body{
+  overflow-x: hidden;
+}
+.line{
+    height: 80%;
+    width: 1px;
+    margin: auto;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+}
+
+.bs{
+    margin-left: 95% ;
+    margin-bottom: 25%;
+}
+
+
+.navbar a:hover {
+    
+    color: blue !important;
+  }
+
+
+.pic{
+  position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+}
+.speech{
+  color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   
+    margin: 20%;
+    margin-left: 25%;
+    width: 50%;  
+}
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 10% 2;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.speech p{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.line-g{
+    height: 12vh;
+    width: 2px;
+    margin: 1% 2%;
+    background-color: gray;
+    opacity: 30%;
+}
+
+.one{
+    position: relative;
+    z-index: 3;
+    margin-right:30% ;
+    margin-top: 1%;
+    margin-bottom:1% ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+   
+}
+.one ul li:hover i{
+    color: blue;
+}
+.one ul li:hover h3{
+    color: blue;
+}
+.two{
+    position: absolute;
+    z-index: 1;
+}
+.three{
+   padding-left: 4%;
+ 
+   
+}
+.three button{
+    padding: 2% 6%;
+  
+}
+.about{
+  text-align: center;
+  width: 100%;
+}
+.lines{
+  position: absolute;
+  z-index: 1;
+  width: 100%; 
+  
+}
+
+.lines-1{
+  /* height: 2px;
+  color: blue; */
+  border: 2px solid #0C65Ed;
+  width: 25%;
+  margin-left: 37.5%;
+ 
+}
+.lines-2{
+  border: 2px solid #0C65Ed;
+width: 30%;
+margin-left: 35%;
+
+}
+.lines-speech{
+  position: relative;
+  z-index: 2;
+  width: 20%;
+background-color: white;
+margin-left: 40%;
+}
+.cons{
+  height: 20vh;
+}
+.con{
+  color: blue;
+  background-color: white;
+  height: 23%;
+  width: 2.5%;
+ 
+}
+
+
+.fixed-image{
+  
+  background-image: url(./images/shadow\ 1.jpg);
+  
+  background-attachment:fixed;
+  height: 100vh;
+
+}
+
+.lines-speech-1{
+  position: relative;
+  z-index: 2;
+  width: 20%;
+  
+margin-left: 40%;
+}
+
+.about-2{
+  text-align: center;
+  
+}
+
+.card-main{
+  padding: 5%;
+  position: absolute;
+  border: solid black 1px;
+ backface-visibility: hidden;
+ display: inline-block;
+ overflow: hidden;
+ 
+}
+
+
+.card-sec{
+ position: relative;
+ padding-top: 2%;
+width: 28%;
+height: 0;
+
+
+overflow: hidden;
+}
+
+.card-main:hover.card-sec{
+animation-name: card-move;
+animation-duration: 2s;
+animation-fill-mode:forwards ;
+}
+@keyframes  card-move{
+
+  form{height:0%}
+  to{height:122%}
+
+}
+
+
+/* .card-main {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card-main:hover {
+  transform: translateY(20px);
+}
+.card-main:hover:before {
+  opacity: 1;
+}
+.card-main:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card-main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card-main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card-main .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card-main .info h4 {
+  margin: 0px;
+}
+.card-main .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card-main .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card-main .info button:hover {
+  background: dodgerblue;
+  color: white;
+} */
+
+.bread{
+  list-style: none;
+
+}
+.bread a{
+  text-decoration: none;
+  color: black;
+}
+.bread a :hover {
+  color: blue;
+}
+@keyframes port-move{
+  from{ rotate: y 90deg;}
+  to{rotate: y 0deg;}
+}
+
+.port{
+  /* position: absolute; */
+  z-index: 2;
+  background-image: url(./images/port2-370x390.jpg);
+  height: 50vh;
+  background-repeat: no-repeat;
+}
+.port-cover{
+  color: white;
+  position: relative;
+  rotate: y 90deg;
+ margin-top: 85%;
+  opacity: 90%;
+  z-index: 3;
+}
+.port:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 8px 8px 8px 8px;
+}
+.port:hover .port-cover{
+  animation-name: port-move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.found{
+  display: inline-block;
+  background-image: url(./images/team1.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  
+}
+@keyframes  found-move{
+
+  form{height:20%}
+  to{height:50%}
+
+}
+
+
+.founder{
+  
+  display:inline-block;
+  width: 100%;
+    height:20%;
+  
+    /* white-space:nowrap; */
+    overflow:hidden;
+}
+.found ul{
+  width: 80%;
+  margin: 0 auto;
+}
+.found:hover .founder{
+  overflow: hidden;
+  animation-name: found-move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  aspect-ratio: (1/1);
+  
+}
+ .founder li:hover i{
+  color: black!important;
+  /* background-color: black; */
+ }
+
+.Personal-line{
+  border-top: 1px solid blue;
+  margin:2% auto;
+  width: 15%;
+  padding: 0.25% 0;
+}
+.line-personal{
+  width: 60%;
+  margin:2% auto;
+ 
+}
+.poppp-1{
+  position: absolute;
+  margin-left: 5%;
+}
+.poppp{
+margin-bottom: 100%;
+  position: relative;
+}
+
+.srch-bar{
+  margin-top: 35%;
+}
+.srch-bar i{
+  margin-top: 2%;
+}
+
+.srch-bar input{
+  height: 60%;
+}
+.srch-bar button{
+  height: 60%;
+  
+}
+.sliders-t{
+  margin-left: 15%;
+}
+.anime-all img{
+height: 100%;
+width: 100%;
+  overflow: hidden;
+  
+}
+
+.anime-all:hover img{
+transform: rotate(-10deg) scale(1.05);
+overflow: hidden;
+}
+.anime-all:hover ul{
+  background-color: blue !important;
+}
+.anime-all:hover .blue-line{
+  width:22% ;
+}
+.anime-all span{
+  background-color: gray;
+  color: gray;
+  height: 10%;
+  width: 1px;
+  padding: 0%;
+}
+
+.grey-line{
+  position: absolute;
+  width: 22%;
+  background-color: gray;
+  z-index: 1;
+  height: 0.5%;
+}
+.blue-line{
+  /* position: relative; */
+  position: absolute;
+  width: 8%;
+  background-color: blue;
+  z-index: 24;
+  height: 0.5%;
+}
+
+.b-op{
+position:absolute;
+z-index: 1;
+opacity: 90%;
+}
+.b-po{
+  position: relative;
+  z-index: 2;
+}
+
+.blue-bbtun:hover{
+  color: white;
+  background-color: blue;
+}
+
+.frontc{
+  background-image: url(./images/shadow\ 1.jpg);
+  height: 50vh;
+
+}
+.frontc a{
+  text-decoration: none;
+
+}
+.blackbg{
+  background-color: black;
+  opacity: 50%;
+  padding: 2% 0;
+  color: white;
+}
+
+
+
